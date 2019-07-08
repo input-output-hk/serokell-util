@@ -20,8 +20,8 @@ module Serokell.Util.Parse.Network
 import Universum hiding (fail, try)
 
 import Control.Monad (fail)
-import Text.Megaparsec (choice, count, option, try, (<?>))
-import Text.Megaparsec.Char (alphaNumChar, char, hexDigitChar, string, oneOf)
+import Text.Megaparsec (choice, count, option, try, (<?>), oneOf)
+import Text.Megaparsec.Char (alphaNumChar, char, hexDigitChar, string)
 
 import Serokell.Util.Parse.Common (CharParser, asciiAlphaNum, byte, countMinMax, limitedInt)
 

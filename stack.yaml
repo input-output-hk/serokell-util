@@ -1,10 +1,7 @@
-#resolver: nightly-2018-04-21
-resolver: lts-11.6
+resolver: lts-13.26
 
 packages:
-- .
-- ../universum
-- ../o-clock
+  - .
 
 nix:
     packages: [openssh,git]
@@ -12,9 +9,8 @@ nix:
 allow-newer: true
 
 extra-deps:
-#- o-clock-0.1.1
-- fmt-0.6
-- formatting-6.3.4
-#- universum-1.1.1
-#- formatting-6.2.5
-- tasty-hedgehog-0.1.0.2
+  - o-clock-1.0.0.1
+  - tasty-hedgehog-0.1.0.2
+
+  - git: https://github.com/input-output-hk/universum
+    commit: 15f7db758ff5a24b874de2247f6f7a4576562da5
