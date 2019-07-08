@@ -19,8 +19,8 @@ import Universum hiding (fail)
 
 import Control.Monad (fail)
 import Prelude (read)
-import Text.Megaparsec (ParsecT, Stream, option, Token, Tokens)
-import Text.Megaparsec.Char (satisfy, digitChar)
+import Text.Megaparsec (ParsecT, Stream, option, satisfy, Token, Tokens)
+import Text.Megaparsec.Char (digitChar)
 
 type CharParser a = forall e s m. (Ord e, Stream s, Token s ~ Char, Tokens s ~ [Char]) => ParsecT e s m a
 
